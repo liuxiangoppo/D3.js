@@ -1,0 +1,24 @@
+// 水平渐变
+// .gradient(rgba(16, 48, 104, 1),rgba(255, 255, 255, 0));
+.gradient(@start: #00ffff, @end: #9fffff) {
+    background: -webkit-linear-gradient(left, @start 0%, @end 100%);
+}
+
+// .border-left-color(3px,#168AE4);
+.border-left-color(@width: 1, @color) {
+    border-left: @width solid @color;
+}
+
+// 阴影
+.boxShadow(@right_left: 5px, @bottom_top: 5px, @box :5px, @box_color: #b6ebf7) {
+    box-shadow: @arguments;
+    -moz-box-shadow: @arguments;
+    -webkit-box-shadow: @arguments;
+}
+
+// 圆角
+.borderRadius(@radius: 5px) {
+    border-radius: @radius;
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+}
